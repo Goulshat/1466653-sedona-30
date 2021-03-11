@@ -477,10 +477,12 @@ img {
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px var(--form-shadow);
   transform: translateY(-100%);
+  transition: transform 0.4s ease-in;
 }
 
 .search-form-open {
   transform: translateY(0);
+  transition: transform 0.4s ease-in;
 }
 
 .hotel-search-paragraph {
