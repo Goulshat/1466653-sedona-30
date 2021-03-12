@@ -460,7 +460,7 @@ img {
 
 /* Hotel search form */
 
-.search-form-wrap {
+.search-form {
   position: absolute;
   top: 0;
   left: 316px;
@@ -474,11 +474,6 @@ img {
   transform: translateY(0);
   transition: transform 0.4s ease-in;
 }
-
-/* .search-form-open {
-  transform: translateY(0);
-  transition: transform 0.4s ease-in;
-} */
 
 .search-form-closed {
   transition: transform 0.4s ease-in;
@@ -581,6 +576,17 @@ img {
   width: 100%;
   margin-top: 55px;
   padding: 16px;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.form-error { 
+  animation-name: shake;
+  animation-duration: 0.6s; 
 }
 
 /* Hotel Filters */
